@@ -11,6 +11,7 @@ services:
           "-e",
           "require('http').get('http://localhost:8080', (res) => { if(res.statusCode !== 200) throw new Error('Not healthy') })",
         ]
+
       interval: 30s
       timeout: 10s
       retries: 3
